@@ -1,0 +1,223 @@
+2017-10-23 08:32:54: ===============================================================================
+2017-10-23 08:32:54: --- New PM2 Daemon started ----------------------------------------------------
+2017-10-23 08:32:54: Time                 : Mon Oct 23 2017 08:32:54 GMT+0000 (UTC)
+2017-10-23 08:32:54: PM2 version          : 2.6.1
+2017-10-23 08:32:54: Node.js version      : 8.7.0
+2017-10-23 08:32:54: Current arch         : x64
+2017-10-23 08:32:54: PM2 home             : /home/ec2-user/.pm2
+2017-10-23 08:32:54: PM2 PID file         : /home/ec2-user/.pm2/pm2.pid
+2017-10-23 08:32:54: RPC socket file      : /home/ec2-user/.pm2/rpc.sock
+2017-10-23 08:32:54: BUS socket file      : /home/ec2-user/.pm2/pub.sock
+2017-10-23 08:32:54: Application log path : /home/ec2-user/.pm2/logs
+2017-10-23 08:32:54: Process dump file    : /home/ec2-user/.pm2/dump.pm2
+2017-10-23 08:32:54: Concurrent actions   : 2
+2017-10-23 08:32:54: SIGTERM timeout      : 1600
+2017-10-23 08:32:54: ===============================================================================
+2017-10-23 08:32:54: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:32:54: App name:wiki id:0 online
+2017-10-23 08:32:56: App [wiki] with id [0] and pid [2971], exited with code [1] via signal [SIGINT]
+2017-10-23 08:32:56: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:32:56: App name:wiki id:0 online
+2017-10-23 08:33:00: App [wiki] with id [0] and pid [2987], exited with code [1] via signal [SIGINT]
+2017-10-23 08:33:00: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:33:00: App name:wiki id:0 online
+2017-10-23 08:33:03: App [wiki] with id [0] and pid [3012], exited with code [1] via signal [SIGINT]
+2017-10-23 08:33:03: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:33:03: App name:wiki id:0 online
+2017-10-23 08:33:06: App [wiki] with id [0] and pid [3028], exited with code [1] via signal [SIGINT]
+2017-10-23 08:33:06: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:33:06: App name:wiki id:0 online
+2017-10-23 08:33:09: App [wiki] with id [0] and pid [3052], exited with code [1] via signal [SIGINT]
+2017-10-23 08:33:09: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-10-23 08:40:26: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:40:26: App name:wiki id:0 online
+2017-10-23 08:40:28: App [wiki] with id [0] and pid [3179], exited with code [1] via signal [SIGINT]
+2017-10-23 08:40:28: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:40:28: App name:wiki id:0 online
+2017-10-23 08:40:31: App [wiki] with id [0] and pid [3194], exited with code [1] via signal [SIGINT]
+2017-10-23 08:40:31: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:40:31: App name:wiki id:0 online
+2017-10-23 08:40:34: App [wiki] with id [0] and pid [3215], exited with code [1] via signal [SIGINT]
+2017-10-23 08:40:34: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:40:34: App name:wiki id:0 online
+2017-10-23 08:40:37: App [wiki] with id [0] and pid [3234], exited with code [1] via signal [SIGINT]
+2017-10-23 08:40:37: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:40:37: App name:wiki id:0 online
+2017-10-23 08:40:40: App [wiki] with id [0] and pid [3250], exited with code [1] via signal [SIGINT]
+2017-10-23 08:40:40: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-10-23 08:42:14: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:42:14: App name:wiki id:0 online
+2017-10-23 08:42:16: App [wiki] with id [0] and pid [3290], exited with code [1] via signal [SIGINT]
+2017-10-23 08:42:16: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:42:16: App name:wiki id:0 online
+2017-10-23 08:42:19: App [wiki] with id [0] and pid [3305], exited with code [1] via signal [SIGINT]
+2017-10-23 08:42:19: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:42:19: App name:wiki id:0 online
+2017-10-23 08:42:23: App [wiki] with id [0] and pid [3325], exited with code [1] via signal [SIGINT]
+2017-10-23 08:42:23: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:42:23: App name:wiki id:0 online
+2017-10-23 08:42:26: App [wiki] with id [0] and pid [3346], exited with code [1] via signal [SIGINT]
+2017-10-23 08:42:26: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-23 08:42:26: App name:wiki id:0 online
+2017-10-23 08:42:29: App [wiki] with id [0] and pid [3367], exited with code [1] via signal [SIGINT]
+2017-10-23 08:42:29: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-10-30 04:52:27: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:52:28: App name:wiki id:0 online
+2017-10-30 04:52:29: App [wiki] with id [0] and pid [19880], exited with code [1] via signal [SIGINT]
+2017-10-30 04:52:29: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:52:29: App name:wiki id:0 online
+2017-10-30 04:52:32: App [wiki] with id [0] and pid [19896], exited with code [1] via signal [SIGINT]
+2017-10-30 04:52:32: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:52:32: App name:wiki id:0 online
+2017-10-30 04:52:36: App [wiki] with id [0] and pid [19915], exited with code [1] via signal [SIGINT]
+2017-10-30 04:52:36: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:52:36: App name:wiki id:0 online
+2017-10-30 04:52:39: App [wiki] with id [0] and pid [19935], exited with code [1] via signal [SIGINT]
+2017-10-30 04:52:39: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:52:39: App name:wiki id:0 online
+2017-10-30 04:52:42: App [wiki] with id [0] and pid [19955], exited with code [1] via signal [SIGINT]
+2017-10-30 04:52:42: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-10-30 04:57:58: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:57:58: App name:wiki id:0 online
+2017-10-30 04:58:00: App [wiki] with id [0] and pid [19993], exited with code [1] via signal [SIGINT]
+2017-10-30 04:58:00: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:58:00: App name:wiki id:0 online
+2017-10-30 04:58:03: App [wiki] with id [0] and pid [20008], exited with code [1] via signal [SIGINT]
+2017-10-30 04:58:03: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:58:03: App name:wiki id:0 online
+2017-10-30 04:58:07: App [wiki] with id [0] and pid [20028], exited with code [1] via signal [SIGINT]
+2017-10-30 04:58:07: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:58:07: App name:wiki id:0 online
+2017-10-30 04:58:10: App [wiki] with id [0] and pid [20049], exited with code [1] via signal [SIGINT]
+2017-10-30 04:58:10: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:58:10: App name:wiki id:0 online
+2017-10-30 04:58:13: App [wiki] with id [0] and pid [20069], exited with code [1] via signal [SIGINT]
+2017-10-30 04:58:13: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-10-30 04:59:07: 0
+2017-10-30 04:59:07: Stopping app:wiki id:0
+2017-10-30 04:59:07: app=wiki id=0 does not have a pid
+2017-10-30 04:59:08: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:59:08: App name:wiki id:0 online
+2017-10-30 04:59:09: App [wiki] with id [0] and pid [20152], exited with code [1] via signal [SIGINT]
+2017-10-30 04:59:09: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:59:09: App name:wiki id:0 online
+2017-10-30 04:59:13: App [wiki] with id [0] and pid [20167], exited with code [1] via signal [SIGINT]
+2017-10-30 04:59:13: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:59:13: App name:wiki id:0 online
+2017-10-30 04:59:16: App [wiki] with id [0] and pid [20188], exited with code [1] via signal [SIGINT]
+2017-10-30 04:59:16: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:59:16: App name:wiki id:0 online
+2017-10-30 04:59:19: App [wiki] with id [0] and pid [20208], exited with code [1] via signal [SIGINT]
+2017-10-30 04:59:19: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 04:59:19: App name:wiki id:0 online
+2017-10-30 04:59:22: App [wiki] with id [0] and pid [20227], exited with code [1] via signal [SIGINT]
+2017-10-30 04:59:22: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-10-30 05:03:03: 0
+2017-10-30 05:03:03: Stopping app:wiki id:0
+2017-10-30 05:03:03: app=wiki id=0 does not have a pid
+2017-10-30 05:03:04: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:03:04: App name:wiki id:0 online
+2017-10-30 05:03:05: App [wiki] with id [0] and pid [20309], exited with code [1] via signal [SIGINT]
+2017-10-30 05:03:05: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:03:05: App name:wiki id:0 online
+2017-10-30 05:03:09: App [wiki] with id [0] and pid [20324], exited with code [1] via signal [SIGINT]
+2017-10-30 05:03:09: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:03:09: App name:wiki id:0 online
+2017-10-30 05:03:12: App [wiki] with id [0] and pid [20344], exited with code [1] via signal [SIGINT]
+2017-10-30 05:03:12: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:03:12: App name:wiki id:0 online
+2017-10-30 05:03:15: App [wiki] with id [0] and pid [20365], exited with code [1] via signal [SIGINT]
+2017-10-30 05:03:15: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:03:15: App name:wiki id:0 online
+2017-10-30 05:03:18: App [wiki] with id [0] and pid [20385], exited with code [1] via signal [SIGINT]
+2017-10-30 05:03:18: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-10-30 05:08:19: pm2 has been killed by signal, dumping process list before exit...
+2017-10-30 05:08:19: Deleting process 0
+2017-10-30 05:08:19: Stopping app:wiki id:0
+2017-10-30 05:08:19: app=wiki id=0 does not have a pid
+2017-10-30 05:08:19: [PM2] Exited peacefully
+2017-10-30 05:09:16: ===============================================================================
+2017-10-30 05:09:16: --- New PM2 Daemon started ----------------------------------------------------
+2017-10-30 05:09:16: Time                 : Mon Oct 30 2017 05:09:16 GMT+0000 (UTC)
+2017-10-30 05:09:16: PM2 version          : 2.6.1
+2017-10-30 05:09:16: Node.js version      : 8.7.0
+2017-10-30 05:09:16: Current arch         : x64
+2017-10-30 05:09:16: PM2 home             : /home/ec2-user/.pm2
+2017-10-30 05:09:16: PM2 PID file         : /home/ec2-user/.pm2/pm2.pid
+2017-10-30 05:09:16: RPC socket file      : /home/ec2-user/.pm2/rpc.sock
+2017-10-30 05:09:16: BUS socket file      : /home/ec2-user/.pm2/pub.sock
+2017-10-30 05:09:16: Application log path : /home/ec2-user/.pm2/logs
+2017-10-30 05:09:16: Process dump file    : /home/ec2-user/.pm2/dump.pm2
+2017-10-30 05:09:16: Concurrent actions   : 2
+2017-10-30 05:09:16: SIGTERM timeout      : 1600
+2017-10-30 05:09:16: ===============================================================================
+2017-10-30 05:09:25: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:09:25: App name:wiki id:0 online
+2017-10-30 05:09:28: App [wiki] with id [0] and pid [2667], exited with code [1] via signal [SIGINT]
+2017-10-30 05:09:28: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:09:28: App name:wiki id:0 online
+2017-10-30 05:09:32: App [wiki] with id [0] and pid [2678], exited with code [1] via signal [SIGINT]
+2017-10-30 05:09:32: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:09:32: App name:wiki id:0 online
+2017-10-30 05:09:35: App [wiki] with id [0] and pid [2702], exited with code [1] via signal [SIGINT]
+2017-10-30 05:09:35: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-10-30 05:09:35: App name:wiki id:0 online
+2017-10-30 05:09:37: 0
+2017-10-30 05:09:37: Stopping app:wiki id:0
+2017-10-30 05:09:37: App [wiki] with id [0] and pid [2722], exited with code [0] via signal [SIGINT]
+2017-10-30 05:09:37: pid=2722 msg=process killed
+2017-11-01 04:39:07: 0
+2017-11-01 04:39:08: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:39:08: App name:wiki id:0 online
+2017-11-01 04:39:10: App [wiki] with id [0] and pid [10500], exited with code [1] via signal [SIGINT]
+2017-11-01 04:39:10: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:39:10: App name:wiki id:0 online
+2017-11-01 04:39:13: App [wiki] with id [0] and pid [10515], exited with code [1] via signal [SIGINT]
+2017-11-01 04:39:13: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:39:13: App name:wiki id:0 online
+2017-11-01 04:39:17: App [wiki] with id [0] and pid [10535], exited with code [1] via signal [SIGINT]
+2017-11-01 04:39:17: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:39:17: App name:wiki id:0 online
+2017-11-01 04:39:20: App [wiki] with id [0] and pid [10555], exited with code [1] via signal [SIGINT]
+2017-11-01 04:39:20: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:39:20: App name:wiki id:0 online
+2017-11-01 04:39:23: App [wiki] with id [0] and pid [10576], exited with code [1] via signal [SIGINT]
+2017-11-01 04:39:23: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-11-01 04:44:31: 0
+2017-11-01 04:44:31: Stopping app:wiki id:0
+2017-11-01 04:44:31: app=wiki id=0 does not have a pid
+2017-11-01 04:44:32: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:44:32: App name:wiki id:0 online
+2017-11-01 04:44:34: App [wiki] with id [0] and pid [10674], exited with code [1] via signal [SIGINT]
+2017-11-01 04:44:34: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:44:34: App name:wiki id:0 online
+2017-11-01 04:44:37: App [wiki] with id [0] and pid [10689], exited with code [1] via signal [SIGINT]
+2017-11-01 04:44:37: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:44:37: App name:wiki id:0 online
+2017-11-01 04:44:40: App [wiki] with id [0] and pid [10709], exited with code [1] via signal [SIGINT]
+2017-11-01 04:44:40: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:44:40: App name:wiki id:0 online
+2017-11-01 04:44:43: App [wiki] with id [0] and pid [10730], exited with code [1] via signal [SIGINT]
+2017-11-01 04:44:43: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:44:43: App name:wiki id:0 online
+2017-11-01 04:44:47: App [wiki] with id [0] and pid [10750], exited with code [1] via signal [SIGINT]
+2017-11-01 04:44:47: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-11-01 04:57:19: 0
+2017-11-01 04:57:19: Stopping app:wiki id:0
+2017-11-01 04:57:19: app=wiki id=0 does not have a pid
+2017-11-01 04:57:20: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:57:20: App name:wiki id:0 online
+2017-11-01 04:57:22: App [wiki] with id [0] and pid [10809], exited with code [1] via signal [SIGINT]
+2017-11-01 04:57:22: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:57:22: App name:wiki id:0 online
+2017-11-01 04:57:25: App [wiki] with id [0] and pid [10825], exited with code [1] via signal [SIGINT]
+2017-11-01 04:57:25: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:57:25: App name:wiki id:0 online
+2017-11-01 04:57:28: App [wiki] with id [0] and pid [10845], exited with code [1] via signal [SIGINT]
+2017-11-01 04:57:28: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:57:28: App name:wiki id:0 online
+2017-11-01 04:57:32: App [wiki] with id [0] and pid [10865], exited with code [1] via signal [SIGINT]
+2017-11-01 04:57:32: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-01 04:57:32: App name:wiki id:0 online
+2017-11-01 04:57:35: App [wiki] with id [0] and pid [10884], exited with code [1] via signal [SIGINT]
+2017-11-01 04:57:35: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"

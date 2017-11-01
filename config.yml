@@ -1,0 +1,82 @@
+title: Wiki
+host: 'http://ec2-18-220-183-214.us-east-2.compute.amazonaws.com'
+port: 80
+paths:
+  repo: ./repo
+  data: ./data
+uploads:
+  maxImageFileSize: 3
+  maxOtherFileSize: 100
+lang: en
+langRtl: false
+public: false
+auth:
+  defaultReadAccess: false
+  local:
+    enabled: true
+  google:
+    enabled: true
+    clientId: GOOGLE_CLIENT_ID
+    clientSecret: GOOGLE_CLIENT_SECRET
+  microsoft:
+    enabled: true
+    clientId: MS_APP_ID
+    clientSecret: MS_APP_SECRET
+  facebook:
+    enabled: false
+    clientId: FACEBOOK_APP_ID
+    clientSecret: FACEBOOK_APP_SECRET
+  github:
+    enabled: false
+    clientId: GITHUB_CLIENT_ID
+    clientSecret: GITHUB_CLIENT_SECRET
+  slack:
+    enabled: false
+    clientId: SLACK_CLIENT_ID
+    clientSecret: SLACK_CLIENT_SECRET
+  ldap:
+    enabled: false
+    url: 'ldap://serverhost:389'
+    bindDn: cn='root'
+    bindCredentials: BIND_PASSWORD
+    searchBase: 'o=users,o=example.com'
+    searchFilter: '(uid={{username}})'
+    tlsEnabled: false
+    tlsCertPath: 'C:\example\root_ca_cert.crt'
+  azure:
+    enabled: false
+    clientId: APP_ID
+    clientSecret: APP_SECRET_KEY
+    resource: 00000002-0000-0000-c000-000000000000
+    tenant: YOUR_TENANT.onmicrosoft.com
+sessionSecret: c7f706feb4d3b2cd55ec129fa9c9c2960c20c313f0e903ef9e33ad1c548c8983
+db: >-
+  mongodb://tzhu:X1q0owieuryt!@cluster0-shard-00-00-nvyln.mongodb.net:27017,cluster0-shard-00-01-nvyln.mongodb.net:27017,cluster0-shard-00-02-nvyln.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin
+git:
+  url: 'git@github.com:tz-hmc/wiki_project.git'
+  branch: master
+  auth:
+    type: ssh
+    username: tz-hmc
+    password: X1q0owieuryt!
+    privateKey: /etc/wiki/keys/ssh_key
+    sslVerify: true
+  showUserEmail: false
+  serverEmail: tzhu@g.hmc.edu
+features:
+  linebreaks: true
+  mathjax: true
+externalLogging:
+  bugsnag: false
+  loggly: false
+  papertrail: false
+  rollbar: false
+  sentry: false
+theme:
+  primary: indigo
+  alt: blue-grey
+  viewSource: all
+  footer: blue-grey
+  code:
+    dark: true
+    colorize: true
