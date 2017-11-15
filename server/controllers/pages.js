@@ -9,6 +9,18 @@ const _ = require('lodash')
 const entryHelper = require('../helpers/entry')
 
 // ==========================================
+// FORUM MODE
+// ==========================================
+/*
+* Take to forum
+*/
+router.get('/forum/*', (req, res, next) => {
+  // res.send('reached forum page')
+  console.log("skdjfdklsjkfljdl")
+  res.render('pages/test')
+})
+
+// ==========================================
 // EDIT MODE
 // ==========================================
 

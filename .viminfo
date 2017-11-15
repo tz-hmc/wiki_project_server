@@ -10,13 +10,18 @@
 
 # hlsearch on (H) or off (h):
 ~H
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
-:wq
-|2,0,1509514496,,"wq"
 :q
-|2,0,1509512320,,"q"
+|2,0,1510729880,,"q"
+:wq
+|2,0,1510729316,,"wq"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1510138706,,"@$"
 
 # Expression History (newest to oldest):
 
@@ -25,235 +30,284 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+""0	LINE	0
 	https://github.com/tz-hmc/wiki_project'
-|3,1,1,1,1,0,1509513455,"https://github.com/tz-hmc/wiki_project'"
+|3,1,0,1,1,0,1510138706,"https://github.com/tz-hmc/wiki_project'"
+"1	LINE	0
+	https://github.com/tz-hmc/wiki_project'
+|3,0,1,1,1,0,1509513455,"https://github.com/tz-hmc/wiki_project'"
 
 # File marks:
-'0  2  9  ~/gitignore
-|4,48,2,9,1509514496,"~/gitignore"
-'1  56  40  ~/config.yml
-|4,49,56,40,1509513638,"~/config.yml"
-'2  56  45  ~/config.yml
-|4,50,56,45,1509513476,"~/config.yml"
-'3  56  45  ~/config.yml
-|4,51,56,45,1509513324,"~/config.yml"
-'4  56  45  ~/config.yml
-|4,52,56,45,1509513324,"~/config.yml"
-'5  4  27  ~/.ssh/config
-|4,53,4,27,1509512674,"~/.ssh/config"
-'6  64  4  ~/config.yml
-|4,54,64,4,1509512320,"~/config.yml"
-'7  64  4  ~/config.yml
-|4,55,64,4,1509512320,"~/config.yml"
-'8  64  4  ~/config.yml
-|4,56,64,4,1509512320,"~/config.yml"
-'9  64  4  ~/config.yml
-|4,57,64,4,1509512320,"~/config.yml"
+'0  1  0  ~/.tmux.conf
+|4,48,1,0,1510729880,"~/.tmux.conf"
+'1  167  19  ~/.tmux.conf
+|4,49,167,19,1510729316,"~/.tmux.conf"
+'2  167  19  ~/.tmux.conf
+|4,50,167,19,1510729316,"~/.tmux.conf"
+'3  1  0  /etc/tmux.conf
+|4,51,1,0,1510729185,"/etc/tmux.conf"
+'4  1  20  ~/server/views/pages/test.pug
+|4,52,1,20,1510164818,"~/server/views/pages/test.pug"
+'5  19  17  ~/server/controllers/pages.js
+|4,53,19,17,1510164793,"~/server/controllers/pages.js"
+'6  20  25  ~/server/controllers/pages.js
+|4,54,20,25,1510164608,"~/server/controllers/pages.js"
+'7  20  25  ~/server/controllers/pages.js
+|4,55,20,25,1510164608,"~/server/controllers/pages.js"
+'8  15  4  ~/server/locales/en/common.json
+|4,56,15,4,1510139040,"~/server/locales/en/common.json"
+'9  1  0  server/locales/en/common.json
+|4,57,1,0,1510139031,"server/locales/en/common.json"
 
 # Jumplist (newest first):
--'  2  9  ~/gitignore
-|4,39,2,9,1509514496,"~/gitignore"
--'  1  0  ~/gitignore
-|4,39,1,0,1509514481,"~/gitignore"
--'  56  40  ~/config.yml
-|4,39,56,40,1509513638,"~/config.yml"
--'  56  40  ~/config.yml
-|4,39,56,40,1509513638,"~/config.yml"
--'  56  45  ~/config.yml
-|4,39,56,45,1509513476,"~/config.yml"
--'  56  45  ~/config.yml
-|4,39,56,45,1509513476,"~/config.yml"
--'  56  45  ~/config.yml
-|4,39,56,45,1509513324,"~/config.yml"
--'  56  45  ~/config.yml
-|4,39,56,45,1509513324,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509513312,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509513312,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509513312,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509513312,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509513312,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509513312,"~/config.yml"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  4  27  ~/.ssh/config
-|4,39,4,27,1509512674,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1509512647,"~/.ssh/config"
--'  64  4  ~/config.yml
-|4,39,64,4,1509512320,"~/config.yml"
--'  64  4  ~/config.yml
-|4,39,64,4,1509512320,"~/config.yml"
--'  64  4  ~/config.yml
-|4,39,64,4,1509512320,"~/config.yml"
--'  64  4  ~/config.yml
-|4,39,64,4,1509512320,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  4  ~/config.yml
-|4,39,62,4,1509512271,"~/config.yml"
--'  62  37  ~/config.yml
-|4,39,62,37,1509512231,"~/config.yml"
--'  62  37  ~/config.yml
-|4,39,62,37,1509512231,"~/config.yml"
--'  62  37  ~/config.yml
-|4,39,62,37,1509512231,"~/config.yml"
--'  62  37  ~/config.yml
-|4,39,62,37,1509512231,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509512215,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509512215,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509512215,"~/config.yml"
--'  64  2  ~/config.yml
-|4,39,64,2,1509512215,"~/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
--'  1  0  /config.yml
-|4,39,1,0,1509511925,"/config.yml"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1510729880,"~/.tmux.conf"
+-'  167  0  ~/.tmux.conf
+|4,39,167,0,1510729828,"~/.tmux.conf"
+-'  167  19  ~/.tmux.conf
+|4,39,167,19,1510729316,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1510729312,"~/.tmux.conf"
+-'  1  0  /etc/tmux.conf
+|4,39,1,0,1510729185,"/etc/tmux.conf"
+-'  1  0  /etc/tmux.conf
+|4,39,1,0,1510729185,"/etc/tmux.conf"
+-'  1  0  /etc/tmux.conf
+|4,39,1,0,1510729185,"/etc/tmux.conf"
+-'  1  0  /etc/tmux.conf
+|4,39,1,0,1510729185,"/etc/tmux.conf"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  1  20  ~/server/views/pages/test.pug
+|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  19  17  ~/server/controllers/pages.js
+|4,39,19,17,1510164793,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  2  ~/server/controllers/pages.js
+|4,39,20,2,1510164786,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  20  25  ~/server/controllers/pages.js
+|4,39,20,25,1510164608,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  52  4  ~/server/controllers/pages.js
+|4,39,52,4,1510164523,"~/server/controllers/pages.js"
+-'  15  4  ~/server/locales/en/common.json
+|4,39,15,4,1510139040,"~/server/locales/en/common.json"
+-'  15  4  ~/server/locales/en/common.json
+|4,39,15,4,1510139040,"~/server/locales/en/common.json"
+-'  15  4  ~/server/locales/en/common.json
+|4,39,15,4,1510139040,"~/server/locales/en/common.json"
+-'  15  4  ~/server/locales/en/common.json
+|4,39,15,4,1510139040,"~/server/locales/en/common.json"
 
 # History of marks within files (newest to oldest):
+
+> ~/.tmux.conf
+	*	1510729879	0
+	"	1	0
+	^	167	20
+	.	167	19
+	+	167	19
+
+> /etc/tmux.conf
+	*	1510729162	0
+	"	1	0
+
+> ~/server/views/pages/test.pug
+	*	1510164818	0
+	"	1	20
+	^	1	21
+	.	1	20
+	+	1	20
+
+> ~/server/controllers/pages.js
+	*	1510164790	0
+	"	19	17
+	^	20	26
+	.	20	25
+	+	11	45
+	+	20	1
+	+	18	4
+	+	20	25
+
+> ~/server/locales/en/common.json
+	*	1510139038	0
+	"	15	4
+	^	15	23
+	.	15	23
+	+	14	22
+	+	15	36
+	+	14	28
+	+	15	34
+	+	14	23
+	+	15	24
+	+	14	22
+	+	15	23
+
+> server/locales/en/common.json
+	*	1510139028	0
+	"	1	0
 
 > ~/gitignore
 	*	1509514495	0
