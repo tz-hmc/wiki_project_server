@@ -1,1 +1,17 @@
 extends ../layout.pug
+
+block rootNavCenter
+  h2.nav-item= t('header.createdoc')
+
+block rootNavRight
+  loading-spinner
+  span.nav-item
+    a.button.is-outlined(v-on:click='$store.dispatch("modalDiscardPage/open")')
+      i.nc-icon-outline.ui-1_simple-remove
+      span= t('nav.discard')
+    a.button(v-on:click='$root.$emit("editor/save")')
+      i.nc-icon-outline.ui-1_check
+      span= t('nav.savedocument')
+
+block forumContent
+  h1 Most Recent Posts
