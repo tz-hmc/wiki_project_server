@@ -236,3 +236,78 @@ kill -s USR1 12310
 tmux attach
 tmux ls
 vim .tmux.conf 
+ls
+tmux
+ls
+git push origin master
+git commit -am "forum page"
+git config --global --edit
+git push origin master
+git add *
+git status
+git push origin master
+git commit -m "test.pug"
+git push origin master
+ls
+git pull
+sudo node wiki restart
+sudo node wiki start
+sudo node wiki stop
+sudo node wiki start
+node wiki start
+sudo node wiki start
+ls
+cd server
+ls
+cd models/
+ls
+vim forum.js 
+sudo node wiki stop
+cd ..
+sudo node wiki stop
+sudo node wiki restart
+node wiki -V
+node wiki --version
+sudo node wiki restart -i
+sudo node wiki restart --trace-warnings
+su
+sudo restart -h now
+sudo restart
+sudo node wiki restart
+ls
+sudo node wiki start
+sudo node wiki stop
+sudo node wiki start
+sudo yum update
+sudo node wiki start
+cd server/controllers/
+ls
+cd ..
+cd models/
+ls
+rm forum.js 
+cd ..
+cd server/controllers/cd ..
+cd ..
+sudo node wiki restart
+cd server/controllers/
+ls
+cd ..
+cd models/
+ls
+vim newmodel.js
+ls
+vim newmodel.js
+cd ../..
+sudo node wiki restart
+vim server/models/newmodel.js
+cd ../..
+cd ~
+sudo node wiki restart
+sudo node wiki --prof-process
+node --prof ./app.js
+node --prof ./wiki.js
+ls -la
+node --inspect wiki.js
+node --inspect wiki
+node --inspect wiki start

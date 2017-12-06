@@ -7,7 +7,7 @@ const router = express.Router()
 const _ = require('lodash')
 
 const entryHelper = require('../helpers/entry')
-
+const forumHelper = require('../helpers/entry')
 // ==========================================
 // FORUM MODE
 // ==========================================
