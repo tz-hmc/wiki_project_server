@@ -15,9 +15,15 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1510729880,,"q"
+|2,0,1512523238,,"q"
 :wq
-|2,0,1510729316,,"wq"
+|2,0,1512523206,,"wq"
+:w
+|2,0,1512523191,,"w"
+:u
+|2,0,1512523092,,"u"
+:q!
+|2,0,1512522858,,"q!"
 
 # Search String History (newest to oldest):
 ? @$
@@ -30,238 +36,367 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	https://github.com/tz-hmc/wiki_project'
-|3,1,0,1,1,0,1510138706,"https://github.com/tz-hmc/wiki_project'"
-"1	LINE	0
-	https://github.com/tz-hmc/wiki_project'
-|3,0,1,1,1,0,1509513455,"https://github.com/tz-hmc/wiki_project'"
+"0	LINE	0
+	      type: String,
+|3,0,0,1,1,0,1512521251,"      type: String,"
+""1	LINE	0
+	block rootNavRight
+	  loading-spinner
+	  .nav-item
+	    if rights.write && pageData.meta.path !== 'home'
+	      a.button.is-outlined.is-icon-only(@click='$store.dispatch("modalDeletePage/open")')
+	        i.nc-icon-outline.ui-1_trash
+	      a.button.is-outlined(v-on:click='$store.dispatch("modalMovePage/open")')
+	        i.nc-icon-outline.arrows-1_shuffle-98
+	        span= t('nav.move')
+	    if appconfig.theme.viewSource === 'all' || (rights.write && appconfig.theme.viewSource === 'write')
+	      a.button.is-outlined(href='/source/' + pageData.meta.path)
+	        i.nc-icon-outline.education_paper
+	        span= t('nav.source')
+	    //-a.button.is-outlined(href='/hist/' + pageData.meta.path)
+	      i.nc-icon-outline.ui-2_time
+	      span= t('nav.history')
+	    if rights.write
+	      a.button(href='/edit/' + pageData.meta.path)
+	        i.nc-icon-outline.ui-1_edit-76
+	        span= t('nav.edit')
+	      a.button(v-on:click='$store.dispatch("modalCreatePage/open")')
+	        i.nc-icon-outline.ui-1_simple-add
+	        span= t('nav.create')
+	
+|3,1,1,1,24,0,1512523202,"block rootNavRight","  loading-spinner","  .nav-item","    if rights.write && pageData.meta.path !== 'home'","      a.button.is-outlined.is-icon-only(@click='$store.dispatch(\"modalDeletePage/open\")')","        i.nc-icon-outline.ui-1_trash","      a.button.is-outlined(v-on:click='$store.dispatch(\"modalMovePage/open\")')","        i.nc-icon-outline.arrows-1_shuffle-98","        span= t('nav.move')",>105
+|<"    if appconfig.theme.viewSource === 'all' || (rights.write && appconfig.theme.viewSource === 'write')","      a.button.is-outlined(href='/source/' + pageData.meta.path)","        i.nc-icon-outline.education_paper","        span= t('nav.source')","    //-a.button.is-outlined(href='/hist/' + pageData.meta.path)","      i.nc-icon-outline.ui-2_time","      span= t('nav.history')","    if rights.write","      a.button(href='/edit/' + pageData.meta.path)",>40
+|<"        i.nc-icon-outline.ui-1_edit-76","        span= t('nav.edit')","      a.button(v-on:click='$store.dispatch(\"modalCreatePage/open\")')","        i.nc-icon-outline.ui-1_simple-add","        span= t('nav.create')",""
+"2	LINE	0
+	  h2.nav-item= t('header.createdoc')
+|3,0,2,1,1,0,1512523080,"  h2.nav-item= t('header.createdoc')"
+"3	LINE	0
+	  editor(inline-template, current-path=pageData.meta.path, v-cloak)
+	    .editor-area
+	      textarea(ref='editorTextArea', v-pre)= pageData.markdown
+	
+	  editor-file
+	  editor-video
+	  editor-codeblock
+	  modal-discard-page(mode='create', current-path=pageData.meta.path)
+	  page-loader(text=t('loading.editor'))
+|3,0,3,1,9,0,1512522500,"  editor(inline-template, current-path=pageData.meta.path, v-cloak)","    .editor-area","      textarea(ref='editorTextArea', v-pre)= pageData.markdown","","  editor-file","  editor-video","  editor-codeblock","  modal-discard-page(mode='create', current-path=pageData.meta.path)","  page-loader(text=t('loading.editor'))"
+"4	LINE	0
+	block rootNavCenter
+	  h1 Forum Post  
+|3,0,4,1,2,0,1512521789,"block rootNavCenter","  h1 Forum Post  "
+"5	LINE	0
+	div
+	  h1 Most Recent Posts
+|3,0,5,1,2,0,1512521671,"div","  h1 Most Recent Posts"
+"6	LINE	0
+	      required: true
+|3,0,6,1,1,0,1512521254,"      required: true"
+"7	LINE	0
+	      type: Number,
+|3,0,7,1,1,0,1512521248,"      type: Number,"
+"8	LINE	0
+	      required: true
+|3,0,8,1,1,0,1512521246,"      required: true"
+"9	LINE	0
+	      required: true
+|3,0,9,1,1,0,1512521243,"      required: true"
 
 # File marks:
-'0  1  0  ~/.tmux.conf
-|4,48,1,0,1510729880,"~/.tmux.conf"
-'1  167  19  ~/.tmux.conf
-|4,49,167,19,1510729316,"~/.tmux.conf"
-'2  167  19  ~/.tmux.conf
-|4,50,167,19,1510729316,"~/.tmux.conf"
-'3  1  0  /etc/tmux.conf
-|4,51,1,0,1510729185,"/etc/tmux.conf"
-'4  1  20  ~/server/views/pages/test.pug
-|4,52,1,20,1510164818,"~/server/views/pages/test.pug"
-'5  19  17  ~/server/controllers/pages.js
-|4,53,19,17,1510164793,"~/server/controllers/pages.js"
-'6  20  25  ~/server/controllers/pages.js
-|4,54,20,25,1510164608,"~/server/controllers/pages.js"
-'7  20  25  ~/server/controllers/pages.js
-|4,55,20,25,1510164608,"~/server/controllers/pages.js"
-'8  15  4  ~/server/locales/en/common.json
-|4,56,15,4,1510139040,"~/server/locales/en/common.json"
-'9  1  0  server/locales/en/common.json
-|4,57,1,0,1510139031,"server/locales/en/common.json"
+'0  89  0  ~/server/views/pages/view.pug
+|4,48,89,0,1512523238,"~/server/views/pages/view.pug"
+'1  17  0  ~/server/views/pages/test.pug
+|4,49,17,0,1512523206,"~/server/views/pages/test.pug"
+'2  1  0  ~/server/views/pages/view.pug
+|4,50,1,0,1512523162,"~/server/views/pages/view.pug"
+'3  1  0  ~/server/views/pages/view.pug
+|4,51,1,0,1512523162,"~/server/views/pages/view.pug"
+'4  12  2  ~/server/views/pages/test.pug
+|4,52,12,2,1512523120,"~/server/views/pages/test.pug"
+'5  12  2  ~/server/views/pages/test.pug
+|4,53,12,2,1512523120,"~/server/views/pages/test.pug"
+'6  1  0  ~/server/views/pages/welcome.pug
+|4,54,1,0,1512523035,"~/server/views/pages/welcome.pug"
+'7  16  4  ~/server/views/layout.pug
+|4,55,16,4,1512523014,"~/server/views/layout.pug"
+'8  1  0  ~/server/views/pages/welcome.pug
+|4,56,1,0,1512522982,"~/server/views/pages/welcome.pug"
+'9  39  4  ~/server/views/layout.pug
+|4,57,39,4,1512522890,"~/server/views/layout.pug"
 
 # Jumplist (newest first):
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1510729880,"~/.tmux.conf"
--'  167  0  ~/.tmux.conf
-|4,39,167,0,1510729828,"~/.tmux.conf"
--'  167  19  ~/.tmux.conf
-|4,39,167,19,1510729316,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1510729312,"~/.tmux.conf"
--'  1  0  /etc/tmux.conf
-|4,39,1,0,1510729185,"/etc/tmux.conf"
--'  1  0  /etc/tmux.conf
-|4,39,1,0,1510729185,"/etc/tmux.conf"
--'  1  0  /etc/tmux.conf
-|4,39,1,0,1510729185,"/etc/tmux.conf"
--'  1  0  /etc/tmux.conf
-|4,39,1,0,1510729185,"/etc/tmux.conf"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  1  20  ~/server/views/pages/test.pug
-|4,39,1,20,1510164818,"~/server/views/pages/test.pug"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  19  17  ~/server/controllers/pages.js
-|4,39,19,17,1510164793,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  2  ~/server/controllers/pages.js
-|4,39,20,2,1510164786,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  20  25  ~/server/controllers/pages.js
-|4,39,20,25,1510164608,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  52  4  ~/server/controllers/pages.js
-|4,39,52,4,1510164523,"~/server/controllers/pages.js"
--'  15  4  ~/server/locales/en/common.json
-|4,39,15,4,1510139040,"~/server/locales/en/common.json"
--'  15  4  ~/server/locales/en/common.json
-|4,39,15,4,1510139040,"~/server/locales/en/common.json"
--'  15  4  ~/server/locales/en/common.json
-|4,39,15,4,1510139040,"~/server/locales/en/common.json"
--'  15  4  ~/server/locales/en/common.json
-|4,39,15,4,1510139040,"~/server/locales/en/common.json"
+-'  89  0  ~/server/views/pages/view.pug
+|4,39,89,0,1512523238,"~/server/views/pages/view.pug"
+-'  1  0  ~/server/views/pages/view.pug
+|4,39,1,0,1512523208,"~/server/views/pages/view.pug"
+-'  17  0  ~/server/views/pages/test.pug
+|4,39,17,0,1512523206,"~/server/views/pages/test.pug"
+-'  17  0  ~/server/views/pages/test.pug
+|4,39,17,0,1512523206,"~/server/views/pages/test.pug"
+-'  12  6  ~/server/views/pages/test.pug
+|4,39,12,6,1512523166,"~/server/views/pages/test.pug"
+-'  12  6  ~/server/views/pages/test.pug
+|4,39,12,6,1512523166,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/view.pug
+|4,39,1,0,1512523162,"~/server/views/pages/view.pug"
+-'  1  0  ~/server/views/pages/view.pug
+|4,39,1,0,1512523162,"~/server/views/pages/view.pug"
+-'  12  2  ~/server/views/pages/test.pug
+|4,39,12,2,1512523120,"~/server/views/pages/test.pug"
+-'  12  2  ~/server/views/pages/test.pug
+|4,39,12,2,1512523120,"~/server/views/pages/test.pug"
+-'  12  2  ~/server/views/pages/test.pug
+|4,39,12,2,1512523120,"~/server/views/pages/test.pug"
+-'  12  2  ~/server/views/pages/test.pug
+|4,39,12,2,1512523120,"~/server/views/pages/test.pug"
+-'  5  2  ~/server/views/pages/test.pug
+|4,39,5,2,1512523092,"~/server/views/pages/test.pug"
+-'  5  2  ~/server/views/pages/test.pug
+|4,39,5,2,1512523092,"~/server/views/pages/test.pug"
+-'  5  2  ~/server/views/pages/test.pug
+|4,39,5,2,1512523092,"~/server/views/pages/test.pug"
+-'  5  2  ~/server/views/pages/test.pug
+|4,39,5,2,1512523092,"~/server/views/pages/test.pug"
+-'  5  2  ~/server/views/pages/test.pug
+|4,39,5,2,1512523092,"~/server/views/pages/test.pug"
+-'  5  2  ~/server/views/pages/test.pug
+|4,39,5,2,1512523092,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/test.pug
+|4,39,1,0,1512523041,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/test.pug
+|4,39,1,0,1512523041,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/test.pug
+|4,39,1,0,1512523041,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/test.pug
+|4,39,1,0,1512523041,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/test.pug
+|4,39,1,0,1512523041,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/test.pug
+|4,39,1,0,1512523041,"~/server/views/pages/test.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  1  0  ~/server/views/pages/welcome.pug
+|4,39,1,0,1512523035,"~/server/views/pages/welcome.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  16  4  ~/server/views/layout.pug
+|4,39,16,4,1512523014,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
+-'  39  4  ~/server/views/layout.pug
+|4,39,39,4,1512522990,"~/server/views/layout.pug"
 
 # History of marks within files (newest to oldest):
+
+> ~/server/views/pages/view.pug
+	*	1512523233	0
+	"	89	0
+
+> ~/server/views/pages/test.pug
+	*	1512523206	0
+	"	17	0
+	^	17	0
+	.	17	0
+	+	1	20
+	+	18	23
+	+	18	1
+	+	18	13
+	+	18	18
+	+	18	0
+	+	5	3
+	+	6	0
+	+	17	13
+	+	18	38
+	+	15	33
+	+	18	0
+	+	17	13
+	+	18	16
+	+	21	0
+	+	18	12
+	+	19	11
+	+	20	4
+	+	4	0
+	+	17	18
+	+	17	0
+
+> ~/server/views/pages/welcome.pug
+	*	1512523023	0
+	"	1	0
+
+> ~/server/views/layout.pug
+	*	1512523010	0
+	"	16	4
+
+> ~/server/views/pages/create.pug
+	*	1512522462	0
+	"	7	0
+
+> ~/server/views/layout
+	*	1512521490	0
+	"	1	0
+
+> ~/server/models/newmodel.js
+	*	1512521256	0
+	"	14	6
+	^	28	0
+	.	14	0
+	+	1	20
+	+	34	58
+	+	30	18
+	+	31	0
+	+	27	0
+	+	23	0
+	+	19	0
+	+	15	0
+	+	14	0
+
+> ~/logs/wiki-error-0.log
+	*	1512521201	0
+	"	114	0
+
+> ~/server/models/forum.js
+	*	1511691455	0
+	"	38	0
 
 > ~/.tmux.conf
 	*	1510729879	0
@@ -273,13 +408,6 @@ $
 > /etc/tmux.conf
 	*	1510729162	0
 	"	1	0
-
-> ~/server/views/pages/test.pug
-	*	1510164818	0
-	"	1	20
-	^	1	21
-	.	1	20
-	+	1	20
 
 > ~/server/controllers/pages.js
 	*	1510164790	0

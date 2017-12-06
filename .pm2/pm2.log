@@ -486,3 +486,55 @@
 2017-11-08 11:17:36: App name:wiki id:0 online
 2017-11-08 11:17:40: App [wiki] with id [0] and pid [3417], exited with code [1] via signal [SIGINT]
 2017-11-08 11:17:40: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-11-26 10:15:52: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:15:52: App name:wiki id:0 online
+2017-11-26 10:15:52: App [wiki] with id [0] and pid [4565], exited with code [1] via signal [SIGINT]
+2017-11-26 10:15:52: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:15:52: App name:wiki id:0 online
+2017-11-26 10:15:53: App [wiki] with id [0] and pid [4575], exited with code [1] via signal [SIGINT]
+2017-11-26 10:15:53: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:15:53: App name:wiki id:0 online
+2017-11-26 10:15:53: App [wiki] with id [0] and pid [4585], exited with code [1] via signal [SIGINT]
+2017-11-26 10:15:53: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:15:53: App name:wiki id:0 online
+2017-11-26 10:15:54: App [wiki] with id [0] and pid [4595], exited with code [1] via signal [SIGINT]
+2017-11-26 10:15:54: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:15:54: App name:wiki id:0 online
+2017-11-26 10:15:55: App [wiki] with id [0] and pid [4605], exited with code [1] via signal [SIGINT]
+2017-11-26 10:15:55: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"
+2017-11-26 10:25:17: pm2 has been killed by signal, dumping process list before exit...
+2017-11-26 10:25:17: Deleting process 0
+2017-11-26 10:25:17: Stopping app:wiki id:0
+2017-11-26 10:25:17: app=wiki id=0 does not have a pid
+2017-11-26 10:25:17: [PM2] Exited peacefully
+2017-11-26 10:35:49: ===============================================================================
+2017-11-26 10:35:49: --- New PM2 Daemon started ----------------------------------------------------
+2017-11-26 10:35:49: Time                 : Sun Nov 26 2017 10:35:49 GMT+0000 (UTC)
+2017-11-26 10:35:49: PM2 version          : 2.6.1
+2017-11-26 10:35:49: Node.js version      : 8.9.1
+2017-11-26 10:35:49: Current arch         : x64
+2017-11-26 10:35:49: PM2 home             : /home/ec2-user/.pm2
+2017-11-26 10:35:49: PM2 PID file         : /home/ec2-user/.pm2/pm2.pid
+2017-11-26 10:35:49: RPC socket file      : /home/ec2-user/.pm2/rpc.sock
+2017-11-26 10:35:49: BUS socket file      : /home/ec2-user/.pm2/pub.sock
+2017-11-26 10:35:49: Application log path : /home/ec2-user/.pm2/logs
+2017-11-26 10:35:49: Process dump file    : /home/ec2-user/.pm2/dump.pm2
+2017-11-26 10:35:49: Concurrent actions   : 2
+2017-11-26 10:35:49: SIGTERM timeout      : 1600
+2017-11-26 10:35:49: ===============================================================================
+2017-11-26 10:35:49: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:35:49: App name:wiki id:0 online
+2017-11-26 10:35:50: App [wiki] with id [0] and pid [10103], exited with code [1] via signal [SIGINT]
+2017-11-26 10:35:50: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:35:50: App name:wiki id:0 online
+2017-11-26 10:35:51: App [wiki] with id [0] and pid [10150], exited with code [1] via signal [SIGINT]
+2017-11-26 10:35:51: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:35:51: App name:wiki id:0 online
+2017-11-26 10:35:51: App [wiki] with id [0] and pid [10197], exited with code [1] via signal [SIGINT]
+2017-11-26 10:35:51: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:35:51: App name:wiki id:0 online
+2017-11-26 10:35:52: App [wiki] with id [0] and pid [10244], exited with code [1] via signal [SIGINT]
+2017-11-26 10:35:52: Starting execution sequence in -fork mode- for app name:wiki id:0
+2017-11-26 10:35:52: App name:wiki id:0 online
+2017-11-26 10:35:53: App [wiki] with id [0] and pid [10291], exited with code [1] via signal [SIGINT]
+2017-11-26 10:35:53: Script /home/ec2-user/server had too many unstable restarts (5). Stopped. "errored"

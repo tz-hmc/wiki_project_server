@@ -2,6 +2,7 @@ extends ../layout.pug
 
 block rootNavCenter
   h2.nav-item= t('header.createdoc')
+  h2 Forum
 
 block rootNavRight
   loading-spinner
@@ -13,5 +14,7 @@ block rootNavRight
       i.nc-icon-outline.ui-1_check
       span= t('nav.savedocument')
 
-block forumContent
-  h1 Most Recent Posts
+block content
+  .container
+    .welcome
+      h2 forum posts
