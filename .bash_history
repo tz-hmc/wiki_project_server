@@ -311,3 +311,72 @@ ls -la
 node --inspect wiki.js
 node --inspect wiki
 node --inspect wiki start
+ls
+sudo node wiki start
+cd server
+ls
+cd models
+ls
+cd app
+ls
+cd ../app
+ls
+cd ..
+find -r forum
+cd libs
+ls
+cd ..
+ls
+cd controllers/
+ls
+ls -la
+cat ws.js 
+ls
+sudo node wiki restart
+cd ..
+sudo node wiki restart
+ls
+cd server/
+cd ../logs
+ls
+vim wiki-error-0.log 
+cd ../server/models/
+ls
+vim newmodel.js 
+cd ~
+sudo node wiki restart
+ls
+cd server/views/
+ls
+cd pages/
+ls
+vim test.pug 
+vim ../layout
+vim ../layout.pug 
+vim test.pug 
+ls
+vim create.pug 
+vim test.pug 
+vim ../layout.pug 
+ls
+vim welcome.pug
+vim ../layout.pug 
+vim welcome.pug
+vim test.pug 
+ls
+vim view.pug 
+vim test.pug 
+vim view.pug 
+git commit -am "all"
+git push
+git status
+git add ../../models/newmodel.js 
+mv ../../models/newmodel.js ../../forumposts.js
+git status
+mv ../../forumposts.js ../../models/
+git status
+git push ../../models/forumposts.js 
+git add ../../models/forumposts.js 
+git commit -m "added forum model"
+git push
+ls

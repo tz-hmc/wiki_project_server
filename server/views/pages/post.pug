@@ -18,14 +18,14 @@ block content
   .container
     .welcome
       h2 Create forum post:
-      form(method='PUT' action='/register')
+      form(method='POST' action='/post')
           div
             span.label Name:
             input(type='text', placeholder='author name', name='author_name')
           div
             span.label Title:
-            input(type='text', placeholder='post content', name='text')
+            input(type='text', placeholder='post content', name='title')
           div
             span.label Post:
             textarea(name="text", cols="40", rows="5")
-          input(type="submit", value="add") Sign up
+          input(type="submit", value="add")

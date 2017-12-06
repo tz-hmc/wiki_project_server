@@ -7,7 +7,7 @@ const router = express.Router()
 const _ = require('lodash')
 
 const entryHelper = require('../helpers/entry')
-const forumPost = require('../models/forumposts');
+var forumPost = require('../models/forumposts');
 
 // ==========================================
 // FORUM MODE
@@ -24,9 +24,17 @@ router.get('/post/*', (req, res, next) => {
 /*
 * Post to forum
 */
-router.put('/post/*', (req, res, next) => {
-  console.log("Post page");
-  forumPost.createPost(res.body.json());
+router.post('/post', (req, res, next) => {
+  console.log(req.body);
+  var p = req.body;
+  var post = new forumPost({id: 1,
+                              text: p.text,
+                              title: p.title,
+                              author_name: p.author_name
+                            });
+  post.save(function(err, post) {
+      if(err) console.log("Could not save forum post.");
+  });
 });
 
 /*
@@ -35,7 +43,7 @@ router.put('/post/*', (req, res, next) => {
 router.get('/forum/*', (req, res, next) => {
   // res.send('reached forum page')
   console.log("Forum main Page")
-  forumPosts.find((err, forumposts) => {
+  forumPost.find((err, forumposts) => {
     if (err) {
       console.log("Error: " + err);
     } else {
