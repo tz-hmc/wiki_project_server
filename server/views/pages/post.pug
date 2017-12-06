@@ -1,0 +1,31 @@
+extends ../layout.pug
+
+block rootNavCenter
+  h2.nav-item= t('header.createdoc')
+  h2 Forum
+
+block rootNavRight
+  loading-spinner
+  span.nav-item
+    a.button.is-outlined(v-on:click='$store.dispatch("modalDiscardPage/open")')
+      i.nc-icon-outline.ui-1_simple-remove
+      span= t('nav.discard')
+    a.button(v-on:click='$root.$emit("editor/save")')
+      i.nc-icon-outline.ui-1_check
+      span= t('nav.savedocument')
+
+block content
+  .container
+    .welcome
+      h2 Create forum post:
+      form(method='PUT' action='/register')
+          div
+            span.label Name:
+            input(type='text', placeholder='author name', name='author_name')
+          div
+            span.label Title:
+            input(type='text', placeholder='post content', name='text')
+          div
+            span.label Post:
+            textarea(name="text", cols="40", rows="5")
+          input(type="submit", value="add") Sign up

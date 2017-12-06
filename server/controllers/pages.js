@@ -7,18 +7,45 @@ const router = express.Router()
 const _ = require('lodash')
 
 const entryHelper = require('../helpers/entry')
-const forumHelper = require('../helpers/entry')
+const forumPost = require('../models/forumposts');
+
 // ==========================================
 // FORUM MODE
 // ==========================================
 /*
-* Take to forum
+* Forum post page
+*/
+router.get('/post/*', (req, res, next) => {
+  // res.send('reached forum page')
+  console.log("Forum post page");
+  res.render('pages/post');
+});
+
+/*
+* Post to forum
+*/
+router.put('/post/*', (req, res, next) => {
+  console.log("Post page");
+  forumPost.createPost(res.body.json());
+});
+
+/*
+* Forum main page
 */
 router.get('/forum/*', (req, res, next) => {
   // res.send('reached forum page')
-  console.log("skdjfdklsjkfljdl")
-  res.render('pages/test')
-})
+  console.log("Forum main Page")
+  forumPosts.find((err, forumposts) => {
+    if (err) {
+      console.log("Error: " + err);
+    } else {
+      res.render('pages/forum', {
+        title: 'website',
+        forumposts: forumposts,
+      });
+    }
+  });
+});
 
 // ==========================================
 // EDIT MODE

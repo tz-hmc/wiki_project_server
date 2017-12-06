@@ -14,21 +14,29 @@ var forumSchema = Mongoose.Schema({
       type: String,
     },
 
-    category: {
-      type: String,
-    },
-
     title: {
       type: String,
     },
 
-    created_at: {
-      type: Date,
+    author_name: {
+      type: String
     },
 
-    author_name: {
+    text: {
       type: String
     }
 });
 
-module.exports = Mongoose.model('Forum Post', forumSchema);
+module.exports = {
+  Mongoose.model('Forumpost', forumSchema);
+  createPost(p) {
+    var post = new Forumpost({id: 1,
+                              text: p.text,
+                              title: p.title,
+                              author_name: p.author_name
+                            });
+    post.save(function(err, post) {
+      if(err) console.log("Could not save forum post.");
+    });
+  }
+}

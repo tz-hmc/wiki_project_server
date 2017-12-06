@@ -18,3 +18,9 @@ block content
   .container
     .welcome
       h2 forum posts
+      each forumpost in forumposts
+        div
+          h3 #{forumpost.title}
+          h4 #{forumpost.author_name}
+          p #{forumpost.id}
+          p #{forumpost.text}
